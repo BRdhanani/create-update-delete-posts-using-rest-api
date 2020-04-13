@@ -18,7 +18,7 @@ $api_response = wp_remote_post( 'https://example.com/wp-json/wp/v2/posts', array
 $body = json_decode( $api_response['body'] );
  
 // Let's take a look what is inside
-// print_r( $body ); 
+print_r( $body ); 
 if( wp_remote_retrieve_response_message( $api_response ) === 'Created' ) {
 	echo 'The post ' . $body->title->rendered . ' has been created successfully';
 }
