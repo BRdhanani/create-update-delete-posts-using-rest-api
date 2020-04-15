@@ -6,7 +6,7 @@ $api_response = wp_remote_post( 'https://example.com/wp-json/wp/v2/posts', array
 		'Authorization' => 'Basic ' . base64_encode( 'LOGIN:PASSWORD' )
 	),
 	'body' => array(
-    'title'   => 'Hello World',
+    		'title'   => 'Hello World',
 		'status'  => 'publish', 
 		'content' => 'This is my first post created using rest API',
 		'categories' => 5, // category ID
